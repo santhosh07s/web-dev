@@ -1,16 +1,14 @@
-function courseroutes(app){
-        app.get("/preview-course", (req,res) =>{
+const {router} = require("express")
+const courseroutes = router();
 
-        })
+    app.get("/preview-course", (req,res) =>{
+
+    })
+          
+    app.post("/my-course", (req,res) =>{
         
-        
-        app.post("/my-course", (req,res) =>{
-        
-        })
-
-}
-
-
+    })
+    
 module.exports = {
     courseroutes : courseroutes
 }

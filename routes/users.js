@@ -1,21 +1,19 @@
-function userroutes (app){
-        app.post("/signup", (req,res) =>{
+
+const {router} = require("express");
+const userroutes = router();
+
+    userroutes.post("/signup", (req,res) =>{
             
+        })
+        
+    userroutes.post("/signin", (req,res) =>{
 
         })
         
-        app.post("/signin", (req,res) =>{
-
-        })
-        
-        app.post("/profile", (req,res) =>{
+    userroutes.post("/profile", (req,res) =>{
 
         })
     
-}
-
-
-
 module.exports = {
     userroutes: userroutes
 }
