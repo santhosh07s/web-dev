@@ -1,5 +1,7 @@
 const {Router} = require("express")
 const courseroutes = Router();
+const {courseModel} = require("../db")
+
 
 
     courseroutes.get("/preview-course", (req,res) =>{
@@ -10,6 +12,4 @@ const courseroutes = Router();
         
     })
 
-module.exports = {
-    courseroutes : courseroutes
-}
+module.exports = courseroutes ;

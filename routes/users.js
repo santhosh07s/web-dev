@@ -1,25 +1,24 @@
-
 const express = require("express");
-const {Router} = require("express");
+const { Router } = require("express");
 const userroutes = Router();
+const{ userModel } = require("../db")
 
 userroutes.use(express.json());
 
-    userroutes.get("/signup", (req,res) =>{
-        res.json({
-            message:"hello world"
-        })
-            
-        })
-        
-    userroutes.post("/signin", (req,res) =>{
+userroutes.get("/signup", (req, res) => {
+   
+});
 
-        })
-        
-    userroutes.post("/profile", (req,res) =>{
-
-        })
+userroutes.post("/signin", (req, res) => {
     
-module.exports = {
-    userroutes: userroutes
-}
+});
+
+userroutes.post("/profile", (req, res) => {
+    
+});
+
+userroutes.post("/preview", (req, res) => {
+   
+});
+
+module.exports = userroutes;

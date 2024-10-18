@@ -1,23 +1,21 @@
 const {Router} = require("express")
-const adminrouter = Router();
+const adminrouters = Router();
+const { adminModel } = require("../db")
 
 
-adminrouter.get("/signup", (req,res) =>{
+
+adminrouters.get("/signup", (req,res) =>{
     res.json({
         message:"hello world"
     })
         
     })
     
-adminrouter.post("/signin", (req,res) =>{
+adminrouters.post("/signin", (req,res) =>{
 
     })
     
-adminrouter.post("/createcourse", (req,res) =>{
+adminrouters.post("/createcourse", (req,res) =>{
 
     })
-module.exports = {
-
-    adminrouter : adminrouter
-
-}
+module.exports = adminrouters;
