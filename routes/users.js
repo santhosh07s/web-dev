@@ -1,8 +1,14 @@
 
-const {router} = require("express");
-const userroutes = router();
+const express = require("express");
+const {Router} = require("express");
+const userroutes = Router();
 
-    userroutes.post("/signup", (req,res) =>{
+userroutes.use(express.json());
+
+    userroutes.get("/signup", (req,res) =>{
+        res.json({
+            message:"hello world"
+        })
             
         })
         

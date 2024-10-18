@@ -1,14 +1,15 @@
-const {router} = require("express")
-const courseroutes = router();
+const {Router} = require("express")
+const courseroutes = Router();
 
-    app.get("/preview-course", (req,res) =>{
+
+    courseroutes.get("/preview-course", (req,res) =>{
 
     })
           
-    app.post("/my-course", (req,res) =>{
+    courseroutes.post("/my-course", (req,res) =>{
         
     })
-    
+
 module.exports = {
     courseroutes : courseroutes
 }
