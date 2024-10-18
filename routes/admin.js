@@ -1,5 +1,5 @@
 const {Router} = require("express")
-const adminrouters = Router();
+const adminrouters  = Router();
 const { adminModel } = require("../db")
 
 
@@ -19,3 +19,7 @@ adminrouters.post("/createcourse", (req,res) =>{
 
     })
 module.exports = adminrouters;
+
+module.exports = {
+    adminrouters:adminrouters
+} 
